@@ -5,15 +5,14 @@ export default function Player() {
   
   function display(){
     setName(Reference.current.value);
-    Reference.current.value = "";
   }
   return (
    
     <section id="player">
       <h2>Welcome {name ?? "unknown entity"}</h2>
       <p>
-        <input type="text" ref={Reference} placeholder='player name please'/>
-        <button onClick={display}>SET NAME</button>
+        <input type="text" ref={Reference}/>
+        <button onClick={display}>Set Name</button>
         
       </p>
       <h1>{name}</h1>
